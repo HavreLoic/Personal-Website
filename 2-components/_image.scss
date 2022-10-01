@@ -1,0 +1,28 @@
+@use "../variables/variables" as *;
+
+.profile-pic {
+  border-radius: $full-width;
+  height: $small-image;
+  width: $small-image;
+  object-fit: cover;
+  float: left;
+  margin: 0 $skill-font-size-sm $skill-font-size-sm 0;
+}
+.typescript {
+  width: 15px;
+  height: 15px;
+}
+@media (min-width: 25em) {
+  .profile-pic {
+    border-radius: $semi-rounded;
+    height: 5em;
+    width: 5em;
+  }
+}
+
+@media (min-width: 40em) {
+  .profile-pic {
+    height: 10em;
+    width: 7em;
+  }
+}

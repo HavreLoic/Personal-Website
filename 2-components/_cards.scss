@@ -1,0 +1,28 @@
+@use "../variables/_variables" as *;
+@use "../0-base/_layout" as *;
+
+.show-projects {
+  @include grid;
+  gap: 2rem;
+}
+.project {
+  padding: 0 $skill-font-size-sm;
+}
+
+.project-img {
+  width: $full-width;
+  @include flex;
+  flex-flow: column;
+}
+
+@media (min-width: 33em) {
+  .show-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 56.25em) {
+  .show-projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

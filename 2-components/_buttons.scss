@@ -1,0 +1,16 @@
+@use "../variables/variables" as *;
+@use "../0-base/layout" as *;
+
+.views {
+  @include grid;
+  justify-content: center;
+  gap: $semi-rounded;
+}
+
+button {
+  border-radius: $semi-rounded;
+  background-color: rgb(46, 56, 159);
+  color: white;
+  padding: $skill-font-size-sm;
+  width: $full-width;
+}

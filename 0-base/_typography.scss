@@ -1,0 +1,28 @@
+@use "../variables/_variables" as *;
+
+$font-weight: (
+  "weight400": 400,
+  "weight500": 500,
+  "weight900": 900,
+);
+
+h1 {
+  font-family: "Sacramento", cursive;
+  color: $primary-text-color;
+  font-weight: map-get($font-weight, weight900);
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: $primary-text-color;
+  font-weight: map-get($font-weight, weight500);
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-family: cursive;
+  color: #30383e;
+}
+@media (min-width: 31.875em) {
+  .section h1 {
+    margin-bottom: 3rem;
+  }
+}

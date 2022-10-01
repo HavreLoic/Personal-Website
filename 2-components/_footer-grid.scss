@@ -1,0 +1,29 @@
+@use "../variables/_variables.scss" as *;
+@use "../0-base/_layout.scss" as *;
+
+.contact-info h2 {
+  text-align: $center-text;
+}
+
+.icons {
+  @include flex;
+  justify-content: space-evenly;
+}
+.social a {
+  color: #473737;
+}
+footer p:last-of-type {
+  text-align: $center-text;
+  margin-left: 0.5rem;
+}
+
+.number {
+  @include flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  div {
+    @include flex;
+    align-items: center;
+  }
+}

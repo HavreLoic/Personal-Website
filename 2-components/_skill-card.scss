@@ -1,0 +1,32 @@
+@use "../variables/_variables" as *;
+@use "../0-base/_typography" as *;
+@use "../0-base/_layout" as *;
+@use "../3-helpers/_mixin" as *;
+
+#skills {
+  @include grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: $skill-font-size-sm;
+}
+.skill {
+  @include grid;
+  grid-template-rows: 1fr 0fr;
+}
+.skill p {
+  font-size: $skill-font-size-sm;
+
+  font-weight: map-get($font-weight, "$weight400");
+}
+
+.skill-img {
+  width: $full-width;
+}
+
+@media (min-width: 30em) {
+  #skills {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 38.125em;
+    margin: auto;
+  }
+}

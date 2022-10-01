@@ -1,0 +1,183 @@
+/*variables*/
+/*text alignment*/
+/*width*/
+/*width*/
+/*width*/
+header,
+footer {
+  background-color: #66bfbf;
+  padding: 1rem;
+}
+
+section,
+.section,
+.header-div,
+.footer {
+  padding: 0 1rem 0;
+}
+
+.section {
+  text-align: center;
+}
+
+#work {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 62.5em) {
+  section,
+.section,
+.header-div,
+.footer {
+    padding: 0 5rem 0;
+  }
+}
+h1 {
+  font-family: "Sacramento", cursive;
+  color: #06283d;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #06283d;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-family: cursive;
+  color: #30383e;
+}
+
+@media (min-width: 31.875em) {
+  .section h1 {
+    margin-bottom: 3rem;
+  }
+}
+body,
+html {
+  margin: 0;
+}
+
+.views {
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  border-radius: 15px;
+  background-color: rgb(46, 56, 159);
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+
+.typescript {
+  width: 15px;
+  height: 15px;
+}
+
+@media (min-width: 25em) {
+  .profile-pic {
+    border-radius: 15px;
+    height: 5em;
+    width: 5em;
+  }
+}
+@media (min-width: 40em) {
+  .profile-pic {
+    height: 10em;
+    width: 7em;
+  }
+}
+.show-projects {
+  display: grid;
+  gap: 2rem;
+}
+
+.project {
+  padding: 0 1rem;
+}
+
+.project-img {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+@media (min-width: 33em) {
+  .show-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 56.25em) {
+  .show-projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: 1rem;
+}
+
+.skill {
+  display: grid;
+  grid-template-rows: 1fr 0fr;
+}
+
+.skill p {
+  font-size: 1rem;
+}
+
+.skill-img {
+  width: 100%;
+}
+
+@media (min-width: 30em) {
+  #skills {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 38.125em;
+    margin: auto;
+  }
+}
+.contact-info h2 {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social a {
+  color: #473737;
+}
+
+footer p:last-of-type {
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+.number {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.number div {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

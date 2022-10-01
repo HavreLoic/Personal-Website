@@ -1,0 +1,28 @@
+@use "../variables/variables" as *;
+
+header,
+footer {
+  background-color: $background-primary;
+  padding: $skill-font-size-sm;
+}
+
+section,
+.section,
+.header-div,
+.footer {
+  padding: 0 $skill-font-size-sm 0;
+}
+.section {
+  text-align: $center-text;
+}
+#work {
+  margin-bottom: $space-section;
+}
+@media (min-width: 62.5em) {
+  section,
+  .section,
+  .header-div,
+  .footer {
+    padding: 0 5rem 0;
+  }
+}
