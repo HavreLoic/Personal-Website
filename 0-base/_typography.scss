@@ -7,7 +7,6 @@ $font-weight: (
 );
 
 h1 {
-  font-family: "Sacramento", cursive;
   color: $primary-text-color;
   font-weight: map-get($font-weight, weight900);
 }
