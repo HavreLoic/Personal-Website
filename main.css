@@ -33,7 +33,6 @@ section,
   }
 }
 h1 {
-  font-family: "Sacramento", cursive;
   color: #06283d;
   font-weight: 900;
 }
@@ -46,7 +45,6 @@ h2 {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-family: cursive;
   color: #30383e;
 }
 
